@@ -1,4 +1,4 @@
-package com.github.formview;
+package com.github.test;
 
 import org.junit.Test;
 
