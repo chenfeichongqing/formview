@@ -1,3 +1,2 @@
 rootProject.name = "formview"
-include ':app'
 include ':formview'
