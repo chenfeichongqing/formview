@@ -38,7 +38,7 @@
 
         </RadioGroup>
 
-        <com.cf.lib.formview.view.FormSwitchView
+        <com.github.chenfeichongqing.formview.view.FormSwitchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
@@ -58,7 +58,7 @@
             android:layout_height="1px"
             android:background="@android:color/darker_gray" />
 
-        <com.cf.lib.formview.view.FormRadioView
+        <com.github.chenfeichongqing.formview.view.FormRadioView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
@@ -81,7 +81,7 @@
             android:layout_height="1px"
             android:background="@android:color/darker_gray" />
 
-        <com.cf.lib.formview.view.FormImageView
+        <com.github.chenfeichongqing.formview.view.FormImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
@@ -99,7 +99,7 @@
             android:layout_height="1px"
             android:background="@android:color/darker_gray" />
 
-        <com.cf.lib.formview.view.FormEditView
+        <com.github.chenfeichongqing.formview.view.FormEditView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
@@ -120,7 +120,7 @@
             android:layout_height="1px"
             android:background="@android:color/darker_gray" />
 
-        <com.cf.lib.formview.view.FormEditMultiView
+        <com.github.chenfeichongqing.formview.view.FormEditMultiView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:femv_content_left_padding="15dp"
@@ -147,7 +147,7 @@
             android:background="@android:color/darker_gray" />
 
 
-        <com.cf.lib.formview.view.FormEditTipsView
+        <com.github.chenfeichongqing.formview.view.FormEditTipsView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
