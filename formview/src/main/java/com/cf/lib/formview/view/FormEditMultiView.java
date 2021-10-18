@@ -20,9 +20,9 @@ import com.cf.lib.formview.R;
 import java.util.Locale;
 
 /**
- * @authoer create by markfrain
- * @github https://github.com/furuiCQ
- * 时间: 2020/09/03
+ * @authoer create by cf
+ * @github https://github.com/chenfeichongqing
+ * 时间: 2021/09/03
  * 描述: 表单多行输入框底部的效果
  */
 public class FormEditMultiView extends FormEditView {

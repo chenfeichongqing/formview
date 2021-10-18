@@ -18,10 +18,9 @@ import com.cf.lib.formview.base.FormView;
 
 
 /**
- * @authoer create by markfrain
- * @github https://github.com/furuiCQ
- * 高怀见物理 和气得天真
- * 时间: 2020-09-03
+ * @authoer create by cf
+ * @github https://github.com/chenfeichongqing
+ * 时间: 2021/09/03
  * 描述: FromSwitchView
  */
 public class FormSwitchView extends FormView<Boolean> {

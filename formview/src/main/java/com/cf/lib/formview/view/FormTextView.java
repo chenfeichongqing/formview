@@ -22,9 +22,9 @@ import com.cf.lib.formview.utils.DpUtils;
 
 
 /**
- * @authoer create by markfrain
- * @github https://github.com/furuiCQ
- * 时间: 2020/09/03
+ * @authoer create by cf
+ * @github https://github.com/chenfeichongqing
+ * 时间: 2021/09/03
  * 描述: 右侧输入框
  */
 public class FormTextView extends FormView<String> {
