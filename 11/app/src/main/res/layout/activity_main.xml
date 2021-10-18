@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RadioGroup
+            android:id="@+id/rg_state"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:checkedButton="@id/rb_left"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="否" />
+
+            <RadioButton
+                android:id="@+id/rb_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="是" />
+
+        </RadioGroup>
+
+        <com.github.chenfeichongqing.formview.view.FormSwitchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="18dp"
+            app:fsv_checkbox_drawable="@drawable/checkbox_switch"
+            app:fsv_checkbox_right_margin="10dp"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_right_margin="15dp"
+            app:fv_title_width="weight_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <com.github.chenfeichongqing.formview.view.FormRadioView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="18dp"
+            app:frv_layout_min_width="150dp"
+            app:frv_left_to_right_margin="10dp"
+            app:frv_text_color="@color/radio_text_color"
+            app:frv_text_drawable_left="@drawable/radio_check"
+            app:frv_text_drawable_padding="10dp"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_right_margin="15dp"
+            app:fv_title_width="weight_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <com.github.chenfeichongqing.formview.view.FormImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="18dp"
+            app:fiv_src="@drawable/base_lib_iv_header_member"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_right_margin="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <com.github.chenfeichongqing.formview.view.FormEditView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="18dp"
+            app:fev_hint="测试提示文字"
+            app:fev_text_bg="@null"
+            app:fev_text_gravity="top"
+            app:fev_unit_text="单位"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_right_margin="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <com.github.chenfeichongqing.formview.view.FormEditMultiView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:femv_content_left_padding="15dp"
+            app:femv_content_right_padding="15dp"
+            app:femv_count_view_visible="true"
+            app:femv_title_layout_bottom_padding="18dp"
+            app:femv_title_layout_left_padding="15dp"
+            app:femv_title_layout_right_padding="15dp"
+            app:femv_title_layout_top_padding="18dp"
+            app:fev_hint="测试提示文字"
+            app:fev_text_bg="@null"
+            app:fev_text_gravity="top"
+            app:fev_text_lines="5"
+            app:fev_text_max_length="300"
+            app:fev_unit_text="单位"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_width="weight_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+
+        <com.github.chenfeichongqing.formview.view.FormEditTipsView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="12dp"
+            app:fetv_tips_text="这是一条测试Tips的内容文本"
+            app:fetv_tips_text_color="@android:color/holo_red_light"
+            app:fetv_tips_text_size="14sp"
+            app:fetv_tips_top_margin="10dp"
+            app:fev_hint="测试提示文字"
+            app:fev_text_bg="@null"
+            app:fev_text_gravity="top"
+            app:fev_unit_text="单位"
+            app:fv_left_image="@drawable/ic_svg_star"
+            app:fv_right_image="@drawable/ic_svg_right_arrow"
+            app:fv_title="测试文本标题"
+            app:fv_title_right_margin="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
