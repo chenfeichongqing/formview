@@ -137,7 +137,7 @@ public abstract class FormView<T> extends FrameLayout implements FormViewInterfa
             leftImageResource = typedArray.getResourceId(R.styleable.FormView_fv_left_image, 0);
             leftImageMaxWidth = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_left_image_max_width, 0);
             leftImageMaxHeight = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_left_image_max_height, 0);
-            leftImageRightMargin = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_left_image_right_margin, 0);
+            leftImageRightMargin = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_left_image_right_margin, DpUtils.dp2px(context,2));
             final int leftIndex = typedArray.getInt(R.styleable.FormView_fv_left_image_scale_type, -1);
             if (leftIndex >= 0) {
                 setIvLeftScaleType(sScaleTypeArray[leftIndex]);
@@ -147,7 +147,6 @@ public abstract class FormView<T> extends FrameLayout implements FormViewInterfa
             rightImageMaxHeight = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_right_image_max_height, 0);
             rightImageLeftMargin = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_right_image_left_margin, 0);
             rightImageRightMargin = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_right_image_right_margin, 0);
-            leftImageRightMargin = typedArray.getDimensionPixelSize(R.styleable.FormView_fv_left_image_right_margin, 0);
             final int rightIndex = typedArray.getInt(R.styleable.FormView_fv_right_image_scale_type, -1);
             if (rightIndex >= 0) {
                 setIvRightScaleType(sScaleTypeArray[rightIndex]);

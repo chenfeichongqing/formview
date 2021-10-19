@@ -113,9 +113,9 @@ public class FormEditView extends FormView<String> {
             inputType = typedArray.getInt(R.styleable.FormEditView_fev_text_inputType, 0);
             textRightMargin = typedArray.getDimensionPixelSize(R.styleable.FormEditView_fev_text_right_margin, 0);
             text = typedArray.getString(R.styleable.FormEditView_fev_text);
-            textWidth = typedArray.getInt(R.styleable.FormEditView_fev_text_width, -2);
+            textWidth = typedArray.getInt(R.styleable.FormEditView_fev_text_width, 0);
             textBg = typedArray.getResourceId(R.styleable.FormEditView_fev_text_bg, -1);
-            textGravity = typedArray.getInt(R.styleable.FormEditView_fev_text_gravity, 0);
+            textGravity = typedArray.getInt(R.styleable.FormEditView_fev_text_gravity, 2);
             textLines = typedArray.getInt(R.styleable.FormEditView_fev_text_lines, 1);
             unitColor = typedArray.getColor(R.styleable.FormEditView_fev_unit_color, Color.BLACK);
             unitTextSize = typedArray.getDimensionPixelSize(R.styleable.FormEditView_fev_unit_text_size, unitTextSize);
@@ -190,11 +190,11 @@ public class FormEditView extends FormView<String> {
     public void setTextGravity(int textGravity) {
         switch (textGravity) {
             default:
-            case 1:
-                etContent.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
-                break;
             case 0:
                 etContent.setGravity(Gravity.TOP | Gravity.LEFT);
+                break;
+            case 1:
+                etContent.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
                 break;
             case 2:
                 etContent.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
